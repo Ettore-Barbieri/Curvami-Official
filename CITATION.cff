@@ -2,6 +2,9 @@ cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 title: "Curvami: meshfree Kirchhoff-Love plates and shells with creases"
 version: 1.0.0
+doi: 10.5281/zenodo.23941187
+date-released: 2026-11-04
+repository-code: "https://github.com/Ettore-Barbieri/Curvami-Official"
 license: MIT
 authors:
   - family-names: Barbieri

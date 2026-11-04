@@ -1,5 +1,7 @@
 # Curvami
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23941187.svg)](https://doi.org/10.5281/zenodo.23941187)
+
 Curvami is a meshfree solver for thin plates and shells with folds. It models
 Kirchhoff–Love plates and shells under large rotations, using reproducing-kernel
 (RKPM) shape functions. A crease is a cut in the approximation that carries an
@@ -102,9 +104,13 @@ builds field by field. See its README.
 
 If you use Curvami, please cite the software and the papers that describe it:
 
-- Curvami, version 1.0.0, Zenodo, DOI to follow.
+- E. Barbieri, Curvami, version 1.0.0 (2026), Zenodo.
+  https://doi.org/10.5281/zenodo.23941187
 - E. Barbieri, *Creases in the light of fracture mechanics*, submitted (2026).
-  It introduces the Kirchhoff–Love formulation in this code.
+  It introduces the Kirchhoff–Love formulation in this code. The paper's own code
+  and data (analytical solutions, the processed Curvami output of its Section 8 and
+  the figure scripts) are archived separately, in `crease-fracture-mechanics`:
+  https://doi.org/10.5281/zenodo.23941165
 - E. Barbieri, *Structural instabilities in active and passive self-folding: how
   many creases must be driven to flat-fold a degree-four vertex?*, submitted (2026).
 
