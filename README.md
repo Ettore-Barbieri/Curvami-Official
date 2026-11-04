@@ -103,6 +103,16 @@ builds field by field. See its README.
 If you use Curvami, please cite the software and the papers that describe it:
 
 - Curvami, version 1.0.0, Zenodo, DOI to follow.
+- E. Barbieri, *Creases in the light of fracture mechanics*, submitted (2026).
+  It introduces the Kirchhoff–Love formulation in this code.
+- E. Barbieri, *Structural instabilities in active and passive self-folding: how
+  many creases must be driven to flat-fold a degree-four vertex?*, submitted (2026).
+
+The earlier, Reissner–Mindlin formulation of the method is described in:
+
+- E. Barbieri, *A meshless Reissner–Mindlin plate formulation for the nonlinear
+  membrane-bending coupling in curved crease origami*, Computational Mechanics 78
+  (2026) 1441–1469. https://doi.org/10.1007/s00466-026-02807-5
 
 `CITATION.cff` has the machine-readable version.
 
