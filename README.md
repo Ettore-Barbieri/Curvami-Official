@@ -102,9 +102,6 @@ builds field by field. See its README.
 
 If you use Curvami, please cite the software and the papers that describe it:
 
-- E. Barbieri, *Creases in the light of fracture mechanics*, submitted to the
-  Journal of the Mechanics and Physics of Solids.
-- E. Barbieri, the four-vertex folding paper (under review; reference to follow).
 - Curvami, version 1.0.0, Zenodo, DOI to follow.
 
 `CITATION.cff` has the machine-readable version.
