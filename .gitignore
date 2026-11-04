@@ -1,0 +1,19 @@
+# Build folders
+build/
+
+# Run outputs (the solver does not create folders: each example keeps an empty out/)
+**/out/*
+!**/out/.gitkeep
+*.h5
+*.res
+*.log
+
+# System and editor files
+.DS_Store
+*.xcuserdata
+.vscode/
+.idea/
+
+# Python bytecode
+__pycache__/
+*.pyc

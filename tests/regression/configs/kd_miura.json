@@ -1,0 +1,83 @@
+{
+  "mesh_file": "tests/regression/meshes/Miura.msh",
+  "output_file": "tests/regression/out/kd_miura.h5",
+  "analysis_type": "KinematicDeployment",
+  "num_steps": 10,
+  "restart": false,
+  "material": {
+    "E": 12000000.0,
+    "nu": 0.3,
+    "h": 0.01
+  },
+  "folds": [
+    {
+      "crease_tag": 5,
+      "angle_start": 0.0,
+      "angle_target": 20.0,
+      "stiffness": 10000.0,
+      "is_rigid": false,
+      "is_driver": true
+    },
+    {
+      "crease_tag": 6,
+      "angle_start": 0.0,
+      "stiffness": 1e-05,
+      "is_rigid": false,
+      "is_driver": false
+    },
+    {
+      "crease_tag": 7,
+      "angle_start": 0.0,
+      "stiffness": 1e-05,
+      "is_rigid": false,
+      "is_driver": false
+    },
+    {
+      "crease_tag": 8,
+      "angle_start": 0.0,
+      "stiffness": 1e-05,
+      "is_rigid": false,
+      "is_driver": false
+    }
+  ],
+  "cuts": [
+    [
+      7,
+      8
+    ],
+    [
+      5,
+      6
+    ]
+  ],
+  "point_bcs": [
+    {
+      "tag": 1,
+      "u": 0.0,
+      "v": 0.0,
+      "w": 0.0
+    },
+    {
+      "tag": 2,
+      "v": 0.0,
+      "w": 0.0
+    },
+    {
+      "tag": 4,
+      "w": 0.0
+    }
+  ],
+  "solver": {
+    "kmax": 1500,
+    "max_iters": 30,
+    "psi": 0.0,
+    "ds": 0.01,
+    "dsmax": 0.075,
+    "dsmin": 0.001
+  },
+  "outputs": [
+    "K_XX",
+    "K_YY",
+    "K_XY"
+  ]
+}

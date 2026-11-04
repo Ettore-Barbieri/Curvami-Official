@@ -1,0 +1,56 @@
+{
+  "mesh_file": "tests/regression/meshes/Arc_LR0p4_Phi30.msh",
+  "output_file": "tests/regression/out/al_arccrease.h5",
+  "analysis_type": "ArcLength",
+  "restart": false,
+  "material": {
+    "E": 96000000.0,
+    "nu": 0.3,
+    "h": 0.005
+  },
+  "folds": [
+    {
+      "crease_tag": 5,
+      "angle_start": 30.0,
+      "stiffness": 0.08000000000000002,
+      "is_rigid": false,
+      "is_driver": false,
+      "force_left": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "force_right": [
+        0.0,
+        0.0,
+        -1.0
+      ]
+    }
+  ],
+  "point_bcs": [
+    {
+      "tag": 1,
+      "u": 0.0,
+      "v": 0.0,
+      "w": 0.0
+    },
+    {
+      "tag": 2,
+      "v": 0.0,
+      "w": 0.0
+    },
+    {
+      "tag": 4,
+      "w": 0.0
+    }
+  ],
+  "solver": {
+    "kmax": 500,
+    "max_iters": 50,
+    "max_load": 0.05,
+    "psi": 0.0,
+    "ds": 0.1,
+    "dsmax": 0.3,
+    "dsmin": 0.001
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "mesh_file": "tests/regression/meshes/SquareTwist.msh",
+  "output_file": "tests/regression/out/tdal_squaretwist.h5",
+  "analysis_type": "TargetDirectedArcLength",
+  "restart": false,
+  "material": {
+    "E": 12000000.0,
+    "nu": 0.3,
+    "h": 0.01
+  },
+  "folds": [
+    {
+      "crease_tag": 6,
+      "angle_start": 0.0,
+      "angle_target": 180.0,
+      "stiffness": 10.0,
+      "is_rigid": false,
+      "is_driver": true
+    },
+    {
+      "crease_tag": 5,
+      "angle_start": 0.0,
+      "angle_target": 180.0,
+      "stiffness": 10.0,
+      "is_rigid": false,
+      "is_driver": true
+    },
+    {
+      "crease_tag": 8,
+      "angle_start": 0.0,
+      "angle_target": 180.0,
+      "stiffness": 10.0,
+      "is_rigid": false,
+      "is_driver": true
+    },
+    {
+      "crease_tag": 7,
+      "angle_start": 0.0,
+      "angle_target": -180.0,
+      "stiffness": 10.0,
+      "is_rigid": false,
+      "is_driver": true
+    }
+  ],
+  "cuts": [
+    [
+      6,
+      8
+    ],
+    [
+      7,
+      5
+    ]
+  ],
+  "point_bcs": [
+    {
+      "tag": 1,
+      "u": 0.0,
+      "v": 0.0,
+      "w": 0.0
+    },
+    {
+      "tag": 2,
+      "v": 0.0,
+      "w": 0.0
+    },
+    {
+      "tag": 4,
+      "w": 0.0
+    }
+  ],
+  "solver": {
+    "max_iters": 30,
+    "psi": 0.0,
+    "max_load": 500.0,
+    "target_tol_deg": 1.0,
+    "ds": 0.1,
+    "kmax": 10,
+    "dsmax": 0.75,
+    "dsmin": 0.001,
+    "snapback_inertia_veto": false,
+    "asla_hold_after_reversal": false
+  }
+}

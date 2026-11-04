@@ -1,0 +1,120 @@
+{
+  "analysis_type": "LineSearch",
+  "target_load": 0.0,
+  "mesh_file": "tests/regression/meshes/Miura.msh",
+  "output_file": "tests/regression/out/ls_miura.h5",
+  "material": {
+    "E": 12000000.0,
+    "h": 0.01,
+    "nu": 0.3
+  },
+  "folds": [
+    {
+      "crease_tag": 7,
+      "stiffness": 10.0,
+      "is_rigid": true,
+      "force_left": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "force_right": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "angle_start": -15.26158022631557
+    },
+    {
+      "crease_tag": 8,
+      "stiffness": 10.0,
+      "is_rigid": true,
+      "force_left": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "force_right": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "angle_start": 15.26158022631557
+    },
+    {
+      "crease_tag": 5,
+      "stiffness": 10.0,
+      "is_rigid": true,
+      "force_left": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "force_right": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "angle_start": 30.0
+    },
+    {
+      "crease_tag": 6,
+      "stiffness": 10.0,
+      "is_rigid": true,
+      "force_left": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "force_right": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "angle_start": 30.0
+    }
+  ],
+  "cuts": [
+    [
+      7,
+      8
+    ],
+    [
+      5,
+      6
+    ]
+  ],
+  "point_bcs": [
+    {
+      "tag": 1,
+      "u": 0.0,
+      "v": 0.0,
+      "w": 0.0
+    },
+    {
+      "tag": 2,
+      "v": 0.0,
+      "w": 0.0
+    },
+    {
+      "tag": 4,
+      "w": 0.0
+    }
+  ],
+  "solver": {
+    "ds": 0.1,
+    "dsmin": 0.0001,
+    "dsmax": 1.0,
+    "max_load": 1.0,
+    "kmax": 100,
+    "psi": 1.0,
+    "tol": 1e-06,
+    "max_iters": 100
+  },
+  "outputs": [
+    "K_XX",
+    "K_YY",
+    "K_XY"
+  ],
+  "restart": false
+}

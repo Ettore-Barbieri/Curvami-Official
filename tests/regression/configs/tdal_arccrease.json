@@ -1,0 +1,51 @@
+{
+  "mesh_file": "tests/regression/meshes/Arc_LR0p4_Phi30.msh",
+  "output_file": "tests/regression/out/tdal_arccrease.h5",
+  "analysis_type": "TargetDirectedArcLength",
+  "restart": false,
+  "material": {
+    "E": 96000000.0,
+    "nu": 0.3,
+    "h": 0.005
+  },
+  "folds": [
+    {
+      "crease_tag": 5,
+      "angle_start": 0.0,
+      "angle_target": 180.0,
+      "stiffness": 0.08000000000000002,
+      "is_rigid": false,
+      "is_driver": true
+    }
+  ],
+  "point_bcs": [
+    {
+      "tag": 1,
+      "u": 0.0,
+      "v": 0.0,
+      "w": 0.0
+    },
+    {
+      "tag": 2,
+      "v": 0.0,
+      "w": 0.0
+    },
+    {
+      "tag": 4,
+      "w": 0.0
+    }
+  ],
+  "solver": {
+    "kmax": 12,
+    "max_iters": 50,
+    "max_load": 1000.0,
+    "psi": 0.0,
+    "ds": 0.1,
+    "dsmax": 0.3,
+    "dsmin": 0.001,
+    "target_tol_deg": 1.0,
+    "snapback_inertia_veto": true,
+    "asla_hold_after_reversal": true,
+    "no_progress_abort": true
+  }
+}
